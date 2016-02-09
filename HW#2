@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main ()
+{
+        string a;
+        string b;
+        string c;
+
+        cout << " Please input your name ";
+        getline(cin, a);
+
+        cout << "Please input your age ";
+        getline(cin, b);
+
+        cout << "what is your favorite thing ";
+        getline(cin, c);
+
+        cout << " Hi " << a << endl;
+        cout << " I know you are " << b << " years old " <<  endl;
+        cout << " your favorite thing is " << c << endl;
+
+        return 0;
+}
