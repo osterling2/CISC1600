@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main ()
+{
+
+        string a;
+        int b;
+        double result1;
+        double c;
+        double result2;
+
+        ///b= 3;
+        c= 0.14;
+
+        cout << "Please input your name";
+        getline(cin, a);
+        cin >> b;
+        cin >> c;
+        result1= b + c;
+        result2= b - c;
+
+cout << "Hi" << a << " I've calculated that " << b << "+" << c << "=" << result1 << "and" << b << "-" << c << "=" << result2 << "."<< endl;
+
+        return 0;
+
+}
