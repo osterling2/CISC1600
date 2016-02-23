@@ -4,13 +4,18 @@ using namespace std;
 int main()
 {
         int sum=0;
-        for( int A=1; 1<=3; A++)
 
+        int iter =1;
+        while ( iter <=3 );
         {
-                int z
-                cin >> z;
-                sum = sum + z;
+                int x = 0;
+                cout<< " input a number to sum up";
+                cin >> x;
+                sum += x;
+                iter++;
         }
+
         cout << " sum =" << sum << endl;
         return 0;
 }
+
