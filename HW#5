@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+
+        int number;
+        cout<< "Guess a number:" << endl;
+        cin >> number;
+        while (number!=5);
+    {
+            if (number > 5);
+                    {
+                            cout << "ops too large! guess again:" << endl;
+                            cin>> number;
+                    }
+
+            if (number < 5);
+                    {
+                            cout << "oops! too small, guess again:" << endl;
+                            cin >> number;
+                    }
+    }
+
+            if (number ==5);
+                    {
+                            cout << "bingo, the number you guess is correct" <<endl;
+                    }
+
+        return 0;
+}
+~                      
