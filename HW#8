@@ -1,0 +1,84 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+
+void outputOne(string names[], int scores[], int index)
+{
+        cout << "Student#" << index+1 << ": Name-" << names[index] << "Score-" << scores[index] << endl;
+}
+
+
+void outputAll(string names[], int scores[], int size)
+{
+        for(int i=0; i<size; i++)
+        {
+                outputOne(names, scores, i);
+        }
+}
+
+
+float getAverageScore(int scores[],int size)
+{
+        int sum = 0;
+        for(int i=0; i<size; i++)
+        {
+                sum=sum + scores[i];
+        }
+
+        float avg = sum / size;
+        return avg;
+}
+
+void updatescore(int scores[], int index, int newscore)
+{
+        int scores[] = newscore;
+}
+
+int main()
+{
+        int size = 5;
+        string names [size] = {"apple", "Benjamine", "Carrie", "Danny", "Eliot"};
+        int scores [size] = {100,99,98,97,96};
+        int operation, index;
+        bool running = true;
+         do
+        {
+                cout << "what would you like to do next?" << endl;
+                cout << " (1-Output student name/score)" << endl;
+                cout << " (2-Output all names/scores)" << endl;
+                cout << " (3-Output average score)" << endl;
+                cout << " (anything else - Exit the program)" << endl;
+                cout << ">";
+                cin >> operation;
+                switch(operation)
+                {
+                        case 1:
+                                cout << "> Please input student #:";
+                                cin >> index;
+                                if(index>=0 && index < 5)
+                                {
+                                        outputOne(names, scores, index);
+                                }
+
+                                else
+
+                                {
+                                        cout << "Invalid index!" << endl;
+                                }
+                                break;
+
+                        case 2:
+                                outputAll(names, scores, size);
+                                break;
+
+                        case 3:
+                                cout << "Average = " << getAverageScore(scores, 5) << endl;
+                                break;
+
+                        default:
+                        running=false;
+                        break;
+                }
+        }while(running);
+        return 0;
